@@ -561,6 +561,15 @@ footer{background:rgba(255,255,255,.55);border-top:1px solid var(--line)}
 .hero-slogan{font-family:'Barlow Condensed','Be Vietnam Pro',sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(1.5rem,3.2vw,2.6rem);line-height:1.05;letter-spacing:.06em;color:var(--c-ink);margin-bottom:1.4rem;opacity:0;animation:fadeUp .9s var(--ease) 1.4s forwards}
 .hero-slogan span{color:var(--c-red2)}
 .about-frame img{object-position:50% 40%}
+/* bigger, clearer video frames */
+.showreel-inner{max-width:1100px}
+.client-group{background:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.85);border-radius:18px;padding:1.6rem 1.8rem 1.8rem;box-shadow:0 10px 40px rgba(120,90,200,.08);margin-bottom:2rem}
+.vids-wide{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;justify-content:stretch}
+.vids-short{grid-template-columns:repeat(3,minmax(0,240px));gap:20px;justify-content:start}
+.vid-short,.vid-wide{border-radius:12px}
+@media(min-width:901px){.proj-item{grid-template-columns:1.5fr 1fr}.proj-item:nth-child(even){grid-template-columns:1fr 1.5fr}}
+@media(max-width:1000px){.vids-wide{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.vids-wide{grid-template-columns:1fr}.vids-short{grid-template-columns:repeat(2,minmax(0,1fr))}.client-group{padding:1.2rem}}
 </style>
 </head>
 <body>
